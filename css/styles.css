@@ -87,7 +87,7 @@ h6 {
 
 /* Глобальный контейнер */
 .container {
-  /* outline: 1px solid tomato; */
+  outline: 1px solid tomato;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -231,9 +231,9 @@ h6 {
 
 .overlay {
   outline: 1px solid tomato;
+
   padding-top: 200px;
   padding-bottom: 200px;
-
   height: 600px;
   max-width: 1600px;
   margin-left: auto;
@@ -299,6 +299,7 @@ h6 {
   text-transform: uppercase;
   letter-spacing: 0.03em;
 
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -306,6 +307,15 @@ h6 {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.features-list .item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  background-color: rgba(245, 244, 250, 1);
+  background-image: url();
+  border-radius: 4px;
 }
 
 .section-features {
@@ -379,6 +389,33 @@ h6 {
 .section-team {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+/* Clients */
+
+.clients-list {
+  display: flex;
+}
+
+.clients-list .item {
+  display: block;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+  /* background-position: center; */
+}
+
+.clients-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--primary-bg-color);
 }
 
 /* Footer  */
