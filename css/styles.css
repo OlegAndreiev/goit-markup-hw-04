@@ -233,9 +233,6 @@ h6 {
 
 /* Hero */
 
-.section-hero {
-}
-
 .overlay {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -323,22 +320,13 @@ h6 {
   border-radius: 4px;
 }
 
-/* .features-list .item::before {
-  content: '';
-  display: block;
-  height: 120px;
-  background-color: rgba(245, 244, 250, 1);
-  background-image: url('./images/hands_phone.jpg');
-  background-size: cover;
-  border-radius: 4px;
-} */
-
 .section-features {
   padding-top: 94px;
   padding-bottom: 47px;
 }
 
 /* Work */
+
 .section-work {
   padding-top: 47px;
   padding-bottom: 94px;
