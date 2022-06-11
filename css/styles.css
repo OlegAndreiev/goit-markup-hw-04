@@ -204,8 +204,7 @@ h6 {
 }
 
 .auth-nav .item {
-  display: flex;
-  align-items: center;
+  /* display: flex; */
 }
 
 .auth-nav .item + .item {
@@ -213,10 +212,11 @@ h6 {
 }
 
 .auth-nav .link {
-  display: block;
+  /* display: flex; */
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--primary-text-color);
+  fill: var(--primary-text-color);
 
   font-weight: 500;
   font-size: 14px;
@@ -227,11 +227,13 @@ h6 {
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .icon-mail {
   margin-right: 10px;
 }
+
 /* Hero */
 
 .section-hero {
@@ -670,4 +672,9 @@ h6 {
 
 .projects-item .title {
   margin-bottom: 4px;
+}
+
+.card-box:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
