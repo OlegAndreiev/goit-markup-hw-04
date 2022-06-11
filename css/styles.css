@@ -87,7 +87,7 @@ h6 {
 
 /* Глобальный контейнер */
 .container {
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -203,20 +203,17 @@ h6 {
   margin-left: auto;
 }
 
-.auth-nav .item {
-  /* display: flex; */
-}
-
 .auth-nav .item + .item {
   margin-left: 50px;
 }
 
 .auth-nav .link {
-  /* display: flex; */
+  display: inline-flex;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--primary-text-color);
   fill: var(--primary-text-color);
+  align-items: center;
 
   font-weight: 500;
   font-size: 14px;
@@ -240,8 +237,6 @@ h6 {
 }
 
 .overlay {
-  outline: 1px solid tomato;
-
   padding-top: 200px;
   padding-bottom: 200px;
   height: 600px;
