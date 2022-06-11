@@ -413,12 +413,14 @@ h6 {
   display: flex;
 }
 
-.social-item {
+.social-item,
+.social-item-join {
   width: 44px;
   height: 44px;
 }
 
-.social-item:not(:last-child) {
+.social-item:not(:last-child),
+.social-item-join:not(:last-child) {
   margin-right: 10px;
 }
 .social-link {
@@ -500,6 +502,10 @@ h6 {
   padding-bottom: 60px;
 }
 
+.footer-bgc .container {
+  display: flex;
+}
+
 .logo-footer-full {
   margin-bottom: 20px;
 }
@@ -527,6 +533,44 @@ h6 {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.join {
+  margin-left: 70px;
+  padding-top: 10px;
+}
+
+.social-link-join {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  color: var(--logo-footer-text-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-icon-join {
+  fill: currentColor;
+}
+
+.social-link-join:hover,
+.social-link-join:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+}
+
+.social-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 /* -----------------Портолио-----------------*/
