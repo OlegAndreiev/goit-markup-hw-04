@@ -53,6 +53,13 @@ h6 {
   margin-bottom: 0;
 }
 
+/* Для всех параграфов */
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Для скрытия */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -75,12 +82,6 @@ h6 {
 .list {
   list-style: none;
   padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-/* Для всех параграфов */
-.text {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -301,7 +302,6 @@ h6 {
   text-transform: uppercase;
   letter-spacing: 0.03em;
 
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -318,6 +318,8 @@ h6 {
   justify-content: center;
   background-color: rgba(245, 244, 250, 1);
   border-radius: 4px;
+
+  margin-bottom: 30px;
 }
 
 .section-features {
@@ -342,27 +344,20 @@ h6 {
 
 /* Team  */
 
+.section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .team-list {
   display: flex;
 }
 
-.team-list .title {
-  color: var(--title-text-color);
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-}
-
-.team-list .text {
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-}
-
 .team-list .card {
   background-color: var(--primary-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list .card:not(:last-child) {
@@ -374,24 +369,25 @@ h6 {
 }
 
 .card-item {
-  padding-top: 30px;
-  padding-bottom: 16px;
+  padding: 30px 32px;
   text-align: center;
 }
 
 .card-item .title {
   margin-bottom: 10px;
+
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
 }
 
-.team-list .card {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.section-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.card-item .job-title {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
 }
 
 .social-list {
@@ -415,12 +411,7 @@ h6 {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-
   color: rgba(175, 177, 184, 1);
-}
-
-.social-icon {
-  fill: currentColor;
 }
 
 .social-link:hover,
@@ -429,10 +420,8 @@ h6 {
   color: var(--primary-bg-color);
 }
 
-.social-links {
-  padding-bottom: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
+.social-icon {
+  fill: currentColor;
 }
 
 /* Clients */
@@ -450,6 +439,7 @@ h6 {
   display: flex;
   width: 170px;
   height: 92px;
+  outline: transparent;
   align-items: center;
   justify-content: center;
   color: rgba(175, 177, 184, 1);
@@ -481,9 +471,11 @@ h6 {
 
 .footer-bgc .container {
   display: flex;
+  align-items: baseline;
 }
 
-.logo-footer-full {
+.logo-footer {
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -514,7 +506,6 @@ h6 {
 
 .join {
   margin-left: 70px;
-  padding-top: 10px;
 }
 
 .social-link-join {
@@ -657,7 +648,8 @@ h6 {
   margin-bottom: 4px;
 }
 
-.card-box:hover {
+.card-box:hover,
+.card-box:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
